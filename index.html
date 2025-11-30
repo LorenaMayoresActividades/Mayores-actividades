@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3R5JH7J2MH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3R5JH7J2MH');
+</script>
 <html lang="es"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -588,7 +596,12 @@
 
                     <label for="mensaje">Mensaje / Consulta:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame tu caso y tus objetivos de rehabilitación" required></textarea>
-
+		    <div style="margin-top: 15px; margin-bottom: 20px; display: flex; align-items: flex-start;">
+        	    	<input type="checkbox" id="acepto-privacidad" name="acepto-privacidad" required style="margin-top: 4px;">
+        		<label for="acepto-privacidad" style="font-size: 0.9em; margin-left: 10px; line-height: 1.3;">
+            		    He leído y acepto la <a href="#politica-privacidad" onclick="cambiarPestana('politica-privacidad');" style="color: var(--verde-principal); text-decoration: underline;">Política de Privacidad</a>.
+        		</label>
+    		     </div>
                     <button type="submit" class="btn-enviar">Enviar Consulta</button>
                 </form>
             </div>
@@ -601,10 +614,6 @@
                 <h4 style="color: var(--texto-oscuro); margin-top: 30px; margin-bottom: 10px;">Horario de Atención Telefónica</h4>
                 <p>Lunes a Viernes: 9:00 - 18:00</p>
                 
-                <h4 style="color: var(--texto-oscuro); margin-top: 30px; margin-bottom: 10px;">¡Sígueme!</h4>
-                <div class="iconos-contacto-rapido" style="justify-content: flex-start;">
-                    <a href="#" target="_blank" class="btn-icono btn-whatsapp" style="padding: 8px 15px; font-size: 0.9rem;">Facebook</a>
-                    <a href="#" target="_blank" class="btn-icono btn-telefono" style="background-color: #c13584; padding: 8px 15px; font-size: 0.9rem;">Instagram</a>
                 </div>
             </div>
         </div>
